@@ -1,6 +1,62 @@
 {% extends 'base.html' %}
 
+{% load static from staticfiles %}
+
 {% block content %}
-<h1>Tel Aviv Makers Intl.</h1>
-<p>iWelcome lorem ipsum etc...</p>
+<div class="content">
+
+  <p>Tel Aviv Makers Intl. (TAMI) is the largest hackerspace and makerspace in Israel. Our community provides members and visitors with the neccesary tools, knowldge and help to create, hack, make and build their next project. Our collective interests are in woodworking, electronics, cooking, programming, sewing, welding, 3D printing and anything else that comes to mind. </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-image">
+        <img src="{% static 'img/wood.jpg' %}" alt="">
+      </div>
+      <div class="card-header">
+         Facilities
+      </div>
+      <div class="card-copy">
+        <p>TAMI has lots of various facilities and infrastructure to support your next hacking or making project, learn more about what TAMI has to offer you.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="{% static 'img/hive.png' %}" alt="">
+      </div>
+      <div class="card-header">
+        Join Us
+      </div>
+      <div class="card-copy">
+        <p>Interested in joining TAMI? Start here to learn how our membership process works.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="{% static 'img/event.jpg' %}" alt="">
+      </div>
+      <div class="card-header">
+        Support the Hackerspace
+      </div>
+      <div class="card-copy">
+        <p>TAMI is a non-profit community hackerspace, we are supported by our network of members and friends. Help us pay the bills and keep the space open.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="resources">
+    Continue to our various resources:
+    <ul>
+      <li>Join the discussion on our <a href="">Facebook Group</a></li>
+    </ul>
+  </div>
+
+  <div class="location">
+    <p>Visit us at Kibbutz Galuyot 45, Studio #106, Tel Aviv</p>
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=34.76469039916993%2C32.04942053105387%2C34.77095067501069%2C32.055067520698834&amp;layer=mapnik&amp;marker=32.05224406943668%2C34.7678205370903" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=32.05224&amp;mlon=34.76782#map=18/32.05224/34.76782">View Larger Map</a></small>
+  </div>
+
+</div>
+
 {% endblock %}

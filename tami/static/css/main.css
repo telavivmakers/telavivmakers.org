@@ -106,6 +106,56 @@ html {
   .type-system-slab p.author {
     font-family: "Roboto Slab", serif; }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.card {
+  background-color: #f6f6f6;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  flex-basis: 15em;
+  flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out; }
+  .card .card-image {
+    background-color: #F8F2B4;
+    height: 150px;
+    max-height: 150px;
+    overflow: hidden; }
+    .card .card-image img {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+      width: 100%; }
+  .card .card-header {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid gainsboro;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em;
+    transition: all 0.2s ease-in-out; }
+  .card .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 0.75em 0.75em; }
+    .card .card-copy p {
+      margin: 0 0 0.75em; }
+  .card:focus, .card:hover {
+    cursor: pointer; }
+    .card:focus img, .card:hover img {
+      opacity: 0.7; }
+  .card:active {
+    background-color: #f6f6f6; }
+    .card:active .card-header {
+      background-color: #f6f6f6; }
+
 div#container {
   max-width: 1200px;
   margin-left: auto;
@@ -114,5 +164,41 @@ div#container {
     clear: both;
     content: "";
     display: block; }
+  div#container header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-top: 30px; }
+    div#container header:last-child {
+      margin-right: 0; }
+  div#container div.content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    div#container div.content:last-child {
+      margin-right: 0; }
+  div#container div.resources {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    div#container div.resources:last-child {
+      margin-right: 0; }
+  div#container div.location {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    div#container div.location:last-child {
+      margin-right: 0; }
+  div#container footer {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    div#container footer:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

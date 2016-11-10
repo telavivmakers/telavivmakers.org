@@ -10,8 +10,12 @@
   </head>
   <body>
     <div id="container" class="type-system-slab">
+      {% include 'header.html' %}
+
       {% block content %}
       {% endblock %}
+
+      {% include 'footer.html' %}
     </div>
   </body>
 </html>

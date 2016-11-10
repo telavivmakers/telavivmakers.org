@@ -2,8 +2,29 @@
 @import "neat/neat";
 
 @import "_slab.scss";
+@import "_cards.scss";
 
 div#container {
     @include outer-container;
+
+    header {
+        @include span-columns(12);
+        margin-top: 30px;
+    }
+
+    div.content {
+        @include span-columns(12);
+    }
+
+    div.resources {
+        @include span-columns(8);
+    }
+    div.location {
+        @include span-columns(4);
+    }
+
+    footer {
+        @include span-columns(12);
+    }
 }
 
