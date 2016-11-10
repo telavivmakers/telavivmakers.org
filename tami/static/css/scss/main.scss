@@ -21,6 +21,9 @@ div#container {
     }
     div.location {
         @include span-columns(4);
+        // background-color: #e5edf8;
+        // padding: 15px;
+        // border-radius: 5px;
     }
 
     footer {
