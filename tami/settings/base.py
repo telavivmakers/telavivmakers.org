@@ -87,3 +87,5 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = str(PROJECT_DIR / 'staticroot')
